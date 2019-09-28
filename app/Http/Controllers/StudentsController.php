@@ -20,7 +20,7 @@ class StudentsController extends Controller
         $student = new Student();
         $student->firstName = $request->input('firstName');
         $student->lastName = $request->input('lastName');
-        $student->gradebook_id = $request->input('image');
+        $student->image = $request->input('image');
         $student->gradebook_id = (int)request('gradebook_id');
         $student->save();
 
